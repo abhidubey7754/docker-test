@@ -7,21 +7,12 @@ pipeline{
         stage('cloning the images'){
             steps{
                 git branch:'main',
-                url:'https://github.com/abhidubey7754/test-docker-network.git'
+                url:'https://github.com/abhidubey7754/docker-test.git'
             }
         }
-        stage('Check Workspace') {
-    steps {
-        sh 'pwd'
-        sh 'ls -la'
-        sh 'find . -name pom.xml'
-    }
-}
             stage('maven build'){
                 steps{
-                    dir('test-docker-network') {
                 sh 'mvn clean package -DskipTests'
-                }
                 }
             }
             /*
