@@ -15,12 +15,12 @@ pipeline{
                 sh 'mvn clean package -DskipTests'
                 }
             }
-            /*
+            
                 stage('build docker image'){
                     steps{
-                        sh 'docker build -t abhi7754/docker1:d1 .'
+                        sh 'docker build -t abhi7754/docker1:d3 .'
                     }
            }
-           */
+           
       }
 }

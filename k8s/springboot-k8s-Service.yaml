@@ -5,7 +5,7 @@ metadata:
    namespace: docker-network-ns
 spec:
   selector:
-     app: springboot	
+     app: springboot-tag	
   ports:
   - port: 80
     targetPort: 8080

@@ -20,7 +20,7 @@ spec:
       containers:
           - name: springboot-cont
 
-            image: abhi7754/docker1:d2
+            image: abhi7754/docker1:d3
 
             ports:
             - containerPort: 8080
